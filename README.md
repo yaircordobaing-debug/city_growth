@@ -31,7 +31,7 @@ Prototipo de dashboard geoespacial en tiempo real para la ciudad de Medellín (C
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/YairCordoba/city_growth.git
+git clone https://github.com/yaircordobaing-debug/city_growth.git
 
 # Entrar a la carpeta
 cd city_growth
