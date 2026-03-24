@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1, "nombre": "Popular",
+    "barrios": ["Santo Domingo Savio No.1", "Santo Domingo Savio No.2", "Popular", "Granizal", "Moscú No.2", "Villa de Guadalupe", "San Pablo", "Aldea Pablo VI", "La Esperanza No.2", "El Compromiso", "La Avanzada", "Carpinelo"],
+    "poblacion": 131000, "area_km2": 3.09,
+    "centro": { "lat": 6.2890, "lng": -75.5428 },
+    "indicadores": { "aqi": 52, "seguridad": 55, "movilidad": 68, "servicios": 78 },
+    "descripcion": "Comuna con gran transformación urbana gracias al Metrocable. Alto potencial turístico por sus miradores y cultura comunitaria.",
+    "turistico": { "demanda": 65, "oferta": 30, "tipo": ["turismo comunitario", "miradores", "arte urbano"] }
+  },
+  {
+    "id": 2, "nombre": "Santa Cruz",
+    "barrios": ["La Isla", "El Playón de Los Comuneros", "Pablo VI", "La Frontera", "La Francia", "Andalucía", "Villa del Socorro", "Villa Niza", "Moscú No.1", "Santa Cruz"],
+    "poblacion": 111000, "area_km2": 2.19,
+    "centro": { "lat": 6.2830, "lng": -75.5510 },
+    "indicadores": { "aqi": 48, "seguridad": 52, "movilidad": 65, "servicios": 76 },
+    "descripcion": "Zona residencial popular con potencial de desarrollo en servicios para la comunidad.",
+    "turistico": { "demanda": 35, "oferta": 20, "tipo": ["gastronomía local", "cultura barrial"] }
+  },
+  {
+    "id": 3, "nombre": "Manrique",
+    "barrios": ["La Salle", "Las Granjas", "Campo Valdés No.2", "Santa Inés", "El Raizal", "El Pomar", "Manrique Central No.2", "Manrique Oriental", "Versalles No.1", "Versalles No.2", "La Cruz", "Oriente"],
+    "poblacion": 160000, "area_km2": 5.25,
+    "centro": { "lat": 6.2720, "lng": -75.5370 },
+    "indicadores": { "aqi": 50, "seguridad": 48, "movilidad": 62, "servicios": 74 },
+    "descripcion": "Una de las comunas más pobladas, con necesidades de servicios y oportunidades en economía local.",
+    "turistico": { "demanda": 30, "oferta": 15, "tipo": ["gastronomía", "comercio local"] }
+  },
+  {
+    "id": 4, "nombre": "Aranjuez",
+    "barrios": ["Berlín", "San Isidro", "Palermo", "Bermejal - Los Álamos", "Moravia", "Sevilla", "San Pedro", "Manrique Central No.1", "Campo Valdés No.1", "Las Esmeraldas", "La Piñuela", "Aranjuez", "Brasilia"],
+    "poblacion": 162000, "area_km2": 4.87,
+    "centro": { "lat": 6.2750, "lng": -75.5550 },
+    "indicadores": { "aqi": 47, "seguridad": 54, "movilidad": 72, "servicios": 80 },
+    "descripcion": "Conectada al centro por el Metro, con el emblemático barrio Moravia. Oportunidades en reciclaje creativo y emprendimiento.",
+    "turistico": { "demanda": 50, "oferta": 25, "tipo": ["jardín de Moravia", "cultura comunitaria", "arte"] }
+  },
+  {
+    "id": 5, "nombre": "Castilla",
+    "barrios": ["Toscana", "Las Brisas", "Florencia", "Tejelo", "Boyacá", "Héctor Abad Gómez", "Belalcázar", "Girardot", "Tricentenario", "Castilla", "Francisco Antonio Zea", "Alfonso López", "Caribe"],
+    "poblacion": 149000, "area_km2": 6.09,
+    "centro": { "lat": 6.2760, "lng": -75.5730 },
+    "indicadores": { "aqi": 45, "seguridad": 60, "movilidad": 75, "servicios": 82 },
+    "descripcion": "Zona con buena conectividad al Metro y actividad comercial consolidada. Ideal para negocios de escala media.",
+    "turistico": { "demanda": 40, "oferta": 35, "tipo": ["comercio", "gastronomía"] }
+  },
+  {
+    "id": 6, "nombre": "Doce de Octubre",
+    "barrios": ["Santander", "Doce de Octubre No.1", "Doce de Octubre No.2", "Pedregal", "La Esperanza", "San Martín de Porres", "Kennedy", "Picacho", "Picachito", "Mirador del Doce", "Progreso No.2", "El Triunfo"],
+    "poblacion": 195000, "area_km2": 3.85,
+    "centro": { "lat": 6.2880, "lng": -75.5780 },
+    "indicadores": { "aqi": 49, "seguridad": 50, "movilidad": 60, "servicios": 75 },
+    "descripcion": "Una de las comunas más densamente pobladas. Gran necesidad de servicios comerciales y recreativos.",
+    "turistico": { "demanda": 25, "oferta": 10, "tipo": ["comercio barrial", "miradores"] }
+  },
+  {
+    "id": 7, "nombre": "Robledo",
+    "barrios": ["Cerro El Volador", "San Germán", "Barrio Facultad de Minas", "La Pilarica", "Bosques de San Pablo", "Altamira", "Córdoba", "López de Mesa", "El Diamante", "Aures No.1", "Aures No.2", "Bello Horizonte", "Villa Flora", "Palenque", "Robledo", "Cucaracho", "Fuente Clara", "Santa Margarita", "Olaya Herrera", "Pajarito", "Monteclaro", "Nuevo Occidente"],
+    "poblacion": 172000, "area_km2": 9.27,
+    "centro": { "lat": 6.2780, "lng": -75.5900 },
+    "indicadores": { "aqi": 42, "seguridad": 58, "movilidad": 66, "servicios": 79 },
+    "descripcion": "Zona universitaria con el Cerro El Volador. Potencial para coworkings, cafeterías de especialidad y servicios a estudiantes.",
+    "turistico": { "demanda": 55, "oferta": 30, "tipo": ["ecoturismo", "naturaleza", "vida universitaria"] }
+  },
+  {
+    "id": 8, "nombre": "Villa Hermosa",
+    "barrios": ["Villa Hermosa", "La Mansión", "San Miguel", "La Ladera", "Batallón Girardot", "Llanaditas", "Los Mangos", "Enciso", "Sucre", "El Pinal", "Trece de Noviembre", "La Libertad", "Villa Tina", "San Antonio", "Las Estancias", "Villa Turbay"],
+    "poblacion": 137000, "area_km2": 5.74,
+    "centro": { "lat": 6.2560, "lng": -75.5420 },
+    "indicadores": { "aqi": 51, "seguridad": 45, "movilidad": 55, "servicios": 72 },
+    "descripcion": "Zona con gran potencial de transformación. Necesidades en conectividad y servicios básicos.",
+    "turistico": { "demanda": 20, "oferta": 10, "tipo": ["cultura barrial", "gastronomía local"] }
+  },
+  {
+    "id": 9, "nombre": "Buenos Aires",
+    "barrios": ["Juan Pablo II", "Barrios de Jesús", "Bombay No.1", "Los Cerros El Vergel", "Alejandro Echavarría", "Barrio Caicedo", "Buenos Aires", "Miraflores", "Cataluña", "La Milagrosa", "Gerona", "El Salvador", "Loreto", "Asomadera No.1", "Asomadera No.2", "Asomadera No.3"],
+    "poblacion": 137000, "area_km2": 5.98,
+    "centro": { "lat": 6.2460, "lng": -75.5480 },
+    "indicadores": { "aqi": 48, "seguridad": 50, "movilidad": 63, "servicios": 77 },
+    "descripcion": "Zona con tradición comercial y cercanía al centro. Oportunidades en comercio minorista y gastronomía.",
+    "turistico": { "demanda": 40, "oferta": 25, "tipo": ["gastronomía", "comercio tradicional"] }
+  },
+  {
+    "id": 10, "nombre": "La Candelaria",
+    "barrios": ["Prado", "Jesús Nazareno", "El Chagualo", "Estación Villa", "San Benito", "Guayaquil", "Corazón de Jesús", "Calle Nueva", "Perpetuo Socorro", "Barrio Colón", "Las Palmas", "Bomboná No.1", "Buenos Aires", "Villanueva", "La Candelaria", "San Diego"],
+    "poblacion": 85000, "area_km2": 7.47,
+    "centro": { "lat": 6.2518, "lng": -75.5636 },
+    "indicadores": { "aqi": 55, "seguridad": 45, "movilidad": 90, "servicios": 92 },
+    "descripcion": "Centro histórico y comercial de Medellín. Alta afluencia turística, museos, vida nocturna. Epicentro de la economía naranja.",
+    "turistico": { "demanda": 95, "oferta": 65, "tipo": ["museos", "gastronomía", "vida nocturna", "patrimonio", "arte"] }
+  },
+  {
+    "id": 11, "nombre": "Laureles-Estadio",
+    "barrios": ["Carlos E. Restrepo", "Suramericana", "Naranjal", "San Joaquín", "Los Conquistadores", "Bolivariana", "Laureles", "Las Acacias", "La Castellana", "Lorena", "El Velódromo", "Estadio", "Los Colores", "Cuarta Brigada", "Florida Nueva", "Batallón"],
+    "poblacion": 122000, "area_km2": 7.41,
+    "centro": { "lat": 6.2480, "lng": -75.5850 },
+    "indicadores": { "aqi": 40, "seguridad": 72, "movilidad": 88, "servicios": 95 },
+    "descripcion": "Zona gastronómica y de vida nocturna premium. Alto flujo turístico. Ideal para experiencias culturales y cafés de especialidad.",
+    "turistico": { "demanda": 90, "oferta": 75, "tipo": ["gastronomía", "vida nocturna", "cafés de especialidad", "cultura"] }
+  },
+  {
+    "id": 12, "nombre": "La América",
+    "barrios": ["Ferrini", "Calasanz", "Los Pinos", "La América", "La Floresta", "Santa Lucía", "El Danubio", "Campo Alegre", "Santa Mónica", "Barrio Cristóbal", "Simón Bolívar", "Santa Teresita", "Calasanz Parte Alta"],
+    "poblacion": 96000, "area_km2": 3.96,
+    "centro": { "lat": 6.2510, "lng": -75.5980 },
+    "indicadores": { "aqi": 41, "seguridad": 68, "movilidad": 78, "servicios": 90 },
+    "descripcion": "Zona residencial con buena infraestructura. Potencial para servicios premium y emprendimientos creativos.",
+    "turistico": { "demanda": 45, "oferta": 35, "tipo": ["comercio", "gastronomía", "servicios"] }
+  },
+  {
+    "id": 13, "nombre": "San Javier",
+    "barrios": ["El Pesebre", "Blanquizal", "Santa Rosa de Lima", "Los Alcázares", "Metropolitano", "La Pradera", "Juan XXIII - La Quiebra", "San Javier No.1", "San Javier No.2", "Veinte de Julio", "Belencito", "Betania", "La Loma", "Nuevos Conquistadores", "Las Independencias", "El Salado", "Eduardo Santos", "Antonio Nariño", "El Socorro", "La Gabriela"],
+    "poblacion": 138000, "area_km2": 7.54,
+    "centro": { "lat": 6.2680, "lng": -75.6100 },
+    "indicadores": { "aqi": 44, "seguridad": 42, "movilidad": 70, "servicios": 73 },
+    "descripcion": "Incluye la famosa Comuna 13 con sus escaleras eléctricas y grafitis. Principal atractivo turístico de la ciudad.",
+    "turistico": { "demanda": 98, "oferta": 45, "tipo": ["graffiti tour", "arte urbano", "hip-hop", "gastronomía", "turismo comunitario"] }
+  },
+  {
+    "id": 14, "nombre": "El Poblado",
+    "barrios": ["Barrio Colombia", "Simesa", "Villa Carlota", "Castropol", "Lalinde", "Las Lomas No.1", "Las Lomas No.2", "Los Balsos No.1", "Los Balsos No.2", "San Lucas", "El Diamante No.2", "El Castillo", "Los Naranjos", "Los Parra", "El Poblado", "Manila", "Astorga", "Patio Bonito", "La Aguacatala", "Santa María de Los Ángeles", "El Tesoro", "Alejandría", "Altos del Poblado"],
+    "poblacion": 129000, "area_km2": 14.14,
+    "centro": { "lat": 6.2100, "lng": -75.5700 },
+    "indicadores": { "aqi": 38, "seguridad": 75, "movilidad": 82, "servicios": 98 },
+    "descripcion": "Zona financiera y turística premium. Alta concentración de hoteles, restaurantes y vida nocturna internacional.",
+    "turistico": { "demanda": 95, "oferta": 85, "tipo": ["gastronomía internacional", "hoteles", "vida nocturna", "compras", "wellness"] }
+  },
+  {
+    "id": 15, "nombre": "Guayabal",
+    "barrios": ["Tenche", "Trinidad", "Santa Fe", "Campo Amor", "Noel", "Guayabal", "La Colina", "Parque Juan Pablo II", "Cristo Rey"],
+    "poblacion": 94000, "area_km2": 7.67,
+    "centro": { "lat": 6.2200, "lng": -75.5920 },
+    "indicadores": { "aqi": 43, "seguridad": 65, "movilidad": 74, "servicios": 88 },
+    "descripcion": "Zona industrial en transformación. Oportunidades en economía creativa y espacios de coworking.",
+    "turistico": { "demanda": 35, "oferta": 20, "tipo": ["industria creativa", "coworking", "gastronomía"] }
+  },
+  {
+    "id": 16, "nombre": "Belén",
+    "barrios": ["Fátima", "Rosales", "Belén", "Granada", "San Bernardo", "Las Playas", "Diego Echavarría", "La Mota", "La Hondonada", "El Rincón", "Loma de Los Bernal", "La Gloria", "Altavista", "La Palma", "Los Alpes", "Las Violetas", "Las Mercedes", "Nueva Villa de Aburrá", "Miravalle", "El Nogal - Los Almendros", "Cerro Nutibara", "AltaVista Parte Central"],
+    "poblacion": 199000, "area_km2": 8.82,
+    "centro": { "lat": 6.2340, "lng": -75.6000 },
+    "indicadores": { "aqi": 41, "seguridad": 66, "movilidad": 76, "servicios": 89 },
+    "descripcion": "Incluye el Cerro Nutibara (Pueblito Paisa). Zona residencial con alto potencial turístico y gastronómico.",
+    "turistico": { "demanda": 75, "oferta": 40, "tipo": ["Pueblito Paisa", "gastronomía", "miradores", "naturaleza"] }
+  }
+]

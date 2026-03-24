@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MedCity Dashboard — Plataforma de analítica territorial inteligente para Medellín. Datos abiertos en tiempo real, oportunidades para PYMES y participación ciudadana.">
+  <title>MedCity Dashboard | Medellín Inteligente</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Leaflet Routing Machine CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="app-layout">
+
+    <!-- ═══ Sidebar ═══ -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <div class="logo-icon">🏙️</div>
+          <div>
+            <h1>MedCity</h1>
+            <span class="subtitle">Dashboard Inteligente</span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section">
+          <div class="nav-section-title">Principal</div>
+          <a class="nav-item active" data-view="dashboard" id="nav-dashboard">
+            <span class="nav-icon">📊</span>
+            <span>Dashboard</span>
+          </a>
+          <a class="nav-item" data-view="map" id="nav-map">
+            <span class="nav-icon">🗺️</span>
+            <span>Mapa Interactivo</span>
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <div class="nav-section-title">Análisis</div>
+          <a class="nav-item" data-view="opportunities" id="nav-opportunities">
+            <span class="nav-icon">💡</span>
+            <span>Oportunidades</span>
+            <span class="nav-badge" id="opp-count">0</span>
+          </a>
+          <a class="nav-item" data-view="reports" id="nav-reports">
+            <span class="nav-icon">📢</span>
+            <span>Participación</span>
+            <span class="nav-badge" id="report-count">0</span>
+          </a>
+          <a class="nav-item" data-view="consultant" id="nav-consultant">
+            <span class="nav-icon">👨‍💼</span>
+            <span>Consultor PYMES</span>
+            <span class="nav-badge badge-purple" style="font-size: 8px">AI</span>
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <div class="nav-section-title">Datos en Vivo</div>
+          <div class="nav-item" style="cursor: default; opacity: 0.7">
+            <span class="nav-icon">🌬️</span>
+            <span>Calidad del Aire</span>
+            <span class="badge badge-success" id="air-badge">Buena</span>
+          </div>
+          <div class="nav-item" style="cursor: default; opacity: 0.7">
+            <span class="nav-icon">🚇</span>
+            <span>Metro</span>
+            <span class="badge badge-success">Activo</span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-indicator">
+          <span class="status-dot"></span>
+          <span>Datos en tiempo real</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ═══ Main Content ═══ -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="main-header">
+        <div class="header-left">
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+          <div>
+            <h2 id="view-title">Dashboard General</h2>
+            <span class="breadcrumb" id="view-breadcrumb">Medellín → Vista Panorama</span>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="header-location" id="user-location">
+            <span class="loc-dot"></span>
+            <span id="location-text">Obteniendo ubicación...</span>
+          </div>
+          <div class="header-time" id="current-time"></div>
+        </div>
+      </header>
+
+      <!-- View Container (rendered dynamically) -->
+      <div class="view-container" id="view-container">
+        <!-- Views are injected here by the router -->
+      </div>
+    </main>
+  </div>
+
+  <!-- ═══ Modal ═══ -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <h3 id="modal-title">Detalle</h3>
+        <button class="modal-close" id="modal-close" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+      <div class="modal-footer" id="modal-footer"></div>
+    </div>
+  </div>
+
+  <!-- ═══ Scripts ═══ -->
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Leaflet Routing Machine -->
+  <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- App Modules -->
+  <script src="js/services/airQuality.js"></script>
+  <script src="js/services/security.js"></script>
+  <script src="js/services/transport.js"></script>
+  <script src="js/services/geodata.js"></script>
+  <script src="js/services/reports.js"></script>
+  <script src="js/views/dashboard.js"></script>
+  <script src="js/views/map.js"></script>
+  <script src="js/views/opportunities.js"></script>
+  <script src="js/views/reports.js"></script>
+  <script src="js/views/consultant.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
