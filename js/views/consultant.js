@@ -238,6 +238,60 @@ const ConsultantView = (() => {
     `;
   }
 
+  function performAnalysis(loc) {
+    const comuna = GeoDataService.getComunaById(loc.comunaId);
+    const indicators = comuna ? comuna.indicadores : { seguridad: 50, movilidad: 50, aqi: 50 };
+    const svc = GeoDataService.getServicesByComuna(loc.comunaId);
+    
+    // Suggest business types based on indicators
+    const types = [
+      { 
+        id: 'cafeteria', 
+        name: 'Cafetería de Especialidad', 
+        icon: '☕',
+        score: Math.min(95, indicators.movilidad * 0.4 + (100 - (indicators.aqi || 50)) * 0.3 + 30),
+        strategies: [
+          'Enfócate en el mercado de "nómadas digitales" con internet de alta velocidad.',
+          'Usa granos de origen local (Antioquia) para atraer al turista extranjero.',
+          'Implementa un sistema de "Rewards" móvil para fidelizar a los residentes.'
+        ]
+      },
+      { 
+        id: 'coworking', 
+        name: 'Eco-Coworking Creativo', 
+        icon: '💻',
+        score: Math.min(95, svc.internet * 0.5 + indicators.movilidad * 0.3 + 20),
+        strategies: [
+          'Aprovecha el déficit de espacios de oficina en esta comuna.',
+          'Ofrece pases por horas para emprendedores de la economía naranja local.',
+          'Alianza con tiendas culturales cercanas para eventos de networking.'
+        ]
+      },
+      { 
+        id: 'turismo', 
+        name: 'Agencia de Experiencias Urbanas', 
+        icon: '🎨',
+        score: Math.min(95, indicators.seguridad * 0.4 + 40),
+        strategies: [
+          'Crea rutas temáticas que conecten con el Metro (Cerca de estaciones).',
+          'Marketing basado en historias de transformación social (Storytelling).',
+          'Usa guías bilingües de la misma comunidad para mayor autenticidad.'
+        ]
+      }
+    ];
+
+    // Sort by score
+    types.sort((a, b) => b.score - a.score);
+
+    return {
+      comuna: comuna ? comuna.nombre : 'Desconocida',
+      location: loc,
+      topBusinesses: types,
+      marketContext: indicators.seguridad > 70 ? 'Entorno seguro y estable' : 'Zona en crecimiento / Vigilancia recomendada',
+      connectivityScore: indicators.movilidad
+    };
+  }
+
   function getConsultantHTML(data) {
     return `
       <div class="consultant-view slide-up">
