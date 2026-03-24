@@ -1209,6 +1209,18 @@ body {
     --space-xl: 16px;
     --space-lg: 16px;
   }
+  .view-container {
+    padding: var(--space-sm);
+  }
+  .main-header {
+    z-index: 1200; /* Above Leaflet controls */
+  }
+  .map-view-container {
+    height: calc(100svh - var(--header-height) - var(--space-sm) * 2);
+  }
+  .map-wrapper {
+    min-height: 50vh;
+  }
   .kpi-grid {
     grid-template-columns: 1fr 1fr;
   }
