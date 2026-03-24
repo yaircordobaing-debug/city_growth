@@ -1212,11 +1212,34 @@ body {
   .kpi-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .opportunity-grid {
+  .opportunity-grid, .grid-2 {
     grid-template-columns: 1fr;
   }
   .header-location {
     display: none;
+  }
+  .route-panel {
+    top: auto;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 90%;
+    max-width: 380px;
+    max-height: 45vh;
+    animation: slideUp 0.4s ease forwards;
+  }
+  .header-left h2 {
+    font-size: 1rem;
+  }
+  .consultant-welcome .empty-icon {
+    font-size: 3rem !important;
+  }
+  .rentability-score {
+    width: 100px;
+    height: 100px;
+  }
+  .score-value {
+    font-size: 1.5rem;
   }
 }
 
