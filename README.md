@@ -1,4 +1,4 @@
-# MedCity Dashboard 🏙️ — Medellín Inteligente
+# City Growth Dashboard 🏙️ — Medellín Inteligente
 
 🌍 **Demo en Vivo (Activo):** [Visitar el Proyecto en Vercel](https://city-growth-git-main-yaircordobaing-debugs-projects.vercel.app)
 
@@ -44,4 +44,4 @@ npx -y serve . -l 3000
 Abrir `http://localhost:3000` en tu navegador.
 
 ---
-© 2026 MedCity Dashboard Team. Datos provistos por la Alcaldía de Medellín y SIATA.
+© 2026 City Growth Dashboard Team. Datos provistos por la Alcaldía de Medellín y SIATA.

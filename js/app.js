@@ -1,6 +1,6 @@
 /* ============================================================
    App.js — SPA Router & Initialization
-   MedCity Dashboard — Medellín Inteligente
+   City Growth Dashboard — Medellín Inteligente
    ============================================================ */
 
 const App = (() => {
@@ -36,7 +36,7 @@ const App = (() => {
   let currentView = null;
 
   function init() {
-    console.log('🏙️ MedCity Dashboard initializing...');
+    console.log('🏙️ City Growth Dashboard initializing...');
     
     // Setup navigation
     setupNavigation();
@@ -62,7 +62,7 @@ const App = (() => {
     const initialView = window.location.hash.replace('#', '') || 'dashboard';
     navigateTo(initialView);
 
-    console.log('✅ MedCity Dashboard ready');
+    console.log('✅ City Growth Dashboard ready');
   }
 
   function setupNavigation() {
