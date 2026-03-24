@@ -1,5 +1,7 @@
 # MedCity Dashboard 🏙️ — Medellín Inteligente
 
+🌍 **Demo en Vivo (Activo):** [Visitar el Proyecto en Vercel](https://city-growth-git-main-yaircordobaing-debugs-projects.vercel.app)
+
 Prototipo de dashboard geoespacial en tiempo real para la ciudad de Medellín (Colombia), diseñado para empoderar a PYMES del sector turístico y la economía naranja.
 
 ## 🚀 Características Principales
